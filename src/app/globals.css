@@ -2,6 +2,8 @@
 @source not "../../*.md";
 
 @theme {
+  --breakpoint-wide: 75rem;
+
   --color-ink: #202047;
   --color-muted: #6c6c98;
   --color-pale: #f4f4fc;
@@ -11,15 +13,10 @@
   --color-brand-start: #9975d0;
   --color-brand-end: #4a3fdb;
 
-  --text-quote: 2rem;
-  --text-quote--line-height: calc(11 / 8);
-  --text-quote-sm: 1.125rem;
-  --text-quote-sm--line-height: calc(4 / 3);
-
-  --text-name: 1.25rem;
-  --text-name--line-height: calc(19 / 10);
-  --text-name-sm: 0.9375rem;
-  --text-name-sm--line-height: calc(4 / 3);
+  --text-quote: clamp(1.125rem, 0.7273rem + 1.697vw, 2rem);
+  --text-quote--line-height: clamp(1.5rem, 0.9318rem + 2.4242vw, 2.75rem);
+  --text-name: clamp(0.9375rem, 0.7955rem + 0.6061vw, 1.25rem);
+  --text-name--line-height: calc(4 / 3);
 
   --radius-card: 5px;
 
@@ -34,6 +31,10 @@
 }
 
 @layer base {
+  :root {
+    --card: min(33.75rem, 67.73vw);
+  }
+
   body {
     @apply bg-white font-sans text-ink;
   }

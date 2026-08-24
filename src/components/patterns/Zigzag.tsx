@@ -9,9 +9,9 @@ export default function Zigzag(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="104"
-      height="78"
-      viewBox="-2 -2 104 78"
+      width="100"
+      height="74"
+      viewBox="0 0 100 74"
       fill="none"
       stroke="currentColor"
       strokeWidth="4"
