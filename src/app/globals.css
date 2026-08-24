@@ -2,8 +2,31 @@
 @source not "../../*.md";
 
 @theme {
+  --color-ink: #202047;
+  --color-muted: #6c6c98;
+  --color-pale: #f4f4fc;
+  --color-control: #8585ac;
+  --color-zigzag: #d3629d;
+  --color-dots: #cf6bcb;
   --color-brand-start: #9975d0;
   --color-brand-end: #4a3fdb;
+
+  --text-quote: 2rem;
+  --text-quote--line-height: calc(11 / 8);
+  --text-quote-sm: 1.125rem;
+  --text-quote-sm--line-height: calc(4 / 3);
+
+  --text-name: 1.25rem;
+  --text-name--line-height: calc(19 / 10);
+  --text-name-sm: 0.9375rem;
+  --text-name-sm--line-height: calc(4 / 3);
+
+  --radius-card: 5px;
+
+  --shadow-card: 0 40px 50px -30px rgb(36 36 113 / 0.5);
+  --shadow-pill: 0 15px 20px -10px rgb(36 36 113 / 0.1);
+
+  --container-page: 69.375rem;
 }
 
 @theme inline {
@@ -11,8 +34,8 @@
 }
 
 @layer base {
-  html {
-    overflow-y: scroll;
+  body {
+    @apply bg-white font-sans text-ink;
   }
 
   a,
@@ -27,6 +50,6 @@
 
 @utility v-focus-ring {
   &:focus-visible {
-    @apply outline-2 outline-offset-4 outline-current;
+    @apply outline-2 outline-offset-4 outline-brand-end;
   }
 }
