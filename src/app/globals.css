@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@source not "../../*.md";
+
+@theme {
+  --color-brand-start: #9975d0;
+  --color-brand-end: #4a3fdb;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+}
+
+@layer base {
+  html {
+    overflow-y: scroll;
+  }
+
+  a,
+  button {
+    @apply v-focus-ring;
+  }
+
+  button:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@utility v-focus-ring {
+  &:focus-visible {
+    @apply outline-2 outline-offset-4 outline-current;
+  }
+}
