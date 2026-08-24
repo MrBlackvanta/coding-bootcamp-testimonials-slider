@@ -1,1 +1,1 @@
-export { testimonials } from "./testimonials";
+export { testimonials, type Testimonial } from "./testimonials";

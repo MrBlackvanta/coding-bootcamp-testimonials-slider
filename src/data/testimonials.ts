@@ -1,7 +1,16 @@
+import type { StaticImageData } from "next/image";
+
 import imageJohn from "@/assets/image-john.webp";
 import imageTomas from "@/assets/image-tomas.webp";
 
-export const testimonials = [
+export type Testimonial = {
+  quote: string;
+  name: string;
+  role: string;
+  portrait: StaticImageData;
+};
+
+export const testimonials: Testimonial[] = [
   {
     quote:
       "“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”",

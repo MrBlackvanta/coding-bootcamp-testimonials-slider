@@ -24,6 +24,7 @@
   --shadow-pill: 0 15px 20px -10px rgb(36 36 113 / 0.1);
 
   --container-page: 69.375rem;
+  --container-panel: 39.6875rem;
 }
 
 @theme inline {
@@ -33,6 +34,8 @@
 @layer base {
   :root {
     --card: min(33.75rem, 67.73vw);
+    --mark: clamp(3.75rem, 2.0455rem + 7.2727vw, 7.5rem);
+    --mark-rise: clamp(1.5625rem, 0.4545rem + 4.7273vw, 4rem);
   }
 
   body {
