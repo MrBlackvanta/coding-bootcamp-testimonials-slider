@@ -13,7 +13,8 @@ const inter = Inter({
 const SITE_URL =
   "https://coding-bootcamp-testimonials-slider.abdelrhman-ahmed8881.workers.dev";
 
-const title = "Coding bootcamp testimonials";
+const name = "Coding Bootcamp Testimonials";
+const title = `${name} | Graduate stories`;
 const description =
   "What graduates say about the bootcamp, in their own words. Tomas Sinclair, UX Engineer, and John Tarkpor, Junior Front-end Developer.";
 
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     title,
     description,
     url: "/",
-    siteName: title,
+    siteName: name,
     locale: "en_US",
     type: "website",
     images: [shareImage],
