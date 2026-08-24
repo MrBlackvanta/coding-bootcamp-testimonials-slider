@@ -16,7 +16,7 @@ const SITE_URL =
 const name = "Coding Bootcamp Testimonials";
 const title = `${name} | Graduate stories`;
 const description =
-  "What graduates say about the bootcamp, in their own words. Tomas Sinclair, UX Engineer, and John Tarkpor, Junior Front-end Developer.";
+  "What graduates say about the bootcamp, in their own words. Tomas Sinclair, UX Engineer, and Abdelrhman Abdelaal, Junior Front-end Developer.";
 
 const shareImage = {
   url: "/opengraph-image.jpg",
