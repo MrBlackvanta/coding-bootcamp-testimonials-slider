@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 
+import { SITE_URL } from "@/app/site";
 import "./globals.css";
 
 const inter = Inter({
@@ -9,9 +10,6 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
 });
-
-const SITE_URL =
-  "https://coding-bootcamp-testimonials-slider.abdelrhman-ahmed8881.workers.dev";
 
 const name = "Coding Bootcamp Testimonials";
 const title = `${name} | Graduate stories`;
